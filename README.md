@@ -28,7 +28,11 @@ import pdb; pdb.set_trace()
 ```
 RUN pip install pudb
 ```
-- The port `pudb` is listening to must be open. In our example it is 6900. One way to do it is adding `EXPOSE 6900` to your Dockerfile.
+- The port `pudb` is listening to must be open. In our example it is 6900. One way to do it is adding to your Dockerfile:
+```
+EXPOSE 6900
+```
+
 #### docker-compose
 If you use docker-compose yml files the syntax is different. You should add:
 ```
