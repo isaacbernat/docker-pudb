@@ -24,8 +24,11 @@ import pdb; pdb.set_trace()
 
 ### Docker
 #### Dockerfile
-You need to open the port that `pudb` is listening to. In our example it is 6900.
-Just add `EXPOSE 6900` to your Dockerfile.
+- `pudb` needs to be installed on the Docker image. One way to do it is adding this line to the Dockerfile:
+```
+RUN pip install pudb
+```
+- The port `pudb` is listening to must be open. In our example it is 6900. One way to do it is adding `EXPOSE 6900` to your Dockerfile.
 #### docker-compose
 If you use docker-compose yml files the syntax is different. You should add:
 ```
