@@ -40,6 +40,11 @@ ports:
     - "6900:6900"
 ```
 
+### Telnet
+**Mac users:** If you don't have any `telnet` client, you can install one via [Homebrew](https://brew.sh/). Type `brew install telnet` on your terminal.
+
+When all above is done, run the container. When the entrypoint is reached, the code execution will stop. Then you need to connect to it via a telnet client, e.g. `telnet 127.0.0.1 6900`. Now you will see the `pudb` screen and debugging can start :D
+
 ## Try it out!
 Clone this repository and from its root folder run:
 ```sh
