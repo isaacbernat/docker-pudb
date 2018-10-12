@@ -58,4 +58,4 @@ telnet 127.0.0.1 6900
 ```
 
 ## Acknowledgements
-- This repository was inspired by [this blog post](http://kartowicz.com/dryobates/2016-09/debugging_gunicorn_on_docker_with_pudb/). Since there were some instructions but not any code readiliy available to try it out, I built this.
+- This repository was inspired by [this blog post](http://kartowicz.com/dryobates/2016-09/debugging_gunicorn_on_docker_with_pudb/). Since there were some instructions but not any code readily available to try it out, I built this.
