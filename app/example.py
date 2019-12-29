@@ -4,6 +4,8 @@ def sum_strings(a, b):
     except Exception:
         from pudb.remote import set_trace
         set_trace(term_size=(160, 40), host='0.0.0.0', port=6900)
+        print(a)
+        print(b)
         return float(a) + float(b)
 
 

@@ -54,7 +54,7 @@ docker build -t pudb-example .
 docker run -p 6900:6900  --detach pudb-example
 # Connect to pudb via telnet
 telnet 127.0.0.1 6900
-# Enjoy debugging!
+# Enjoy debugging and star the repo if you liked it!
 ```
 
 ## Acknowledgements
