@@ -58,4 +58,5 @@ telnet 127.0.0.1 6900
 ```
 
 ## Acknowledgements
-- This repository was inspired by [this blog post](http://kartowicz.com/dryobates/2016-09/debugging_gunicorn_on_docker_with_pudb/). Since there were some instructions but not any code readily available to try it out, I built this.
+- Inspiration came from [this blog post](http://kartowicz.com/dryobates/2016-09/debugging_gunicorn_on_docker_with_pudb/). There was no code readily available to try it out, so I created this repository.
+- This repository is used as a reference for this related [Stack Overflow entry](https://stackoverflow.com/questions/36885957/running-pudb-inside-docker-container/51404762#51404762)
