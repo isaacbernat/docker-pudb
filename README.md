@@ -2,7 +2,7 @@
 Debug Python code within a Docker container remotely from your terminal using pudb.
 
 ## Prerequisites:
-- [Python](https://docs.python.org/3/index.html)
+- [Python](https://docs.python.org/3/index.html) (versions 2.7 and 3.6+ supported)
 - [Docker](https://docs.docker.com/)
 - [pudb](https://documen.tician.de/pudb/)
 - [telnet client](https://en.wikipedia.org/wiki/Telnet)
@@ -48,12 +48,18 @@ When all above is done, run the container. When the entrypoint is reached, the c
 ## Try it out!
 Clone this repository and from its root folder run:
 ```sh
-# Build the image
+# Optional: try it on Python 2.7 instead of 3.6+
+cd python2
+
+# Build the Docker image
 docker build -t pudb-example .
-# Run the container (in the background) with port 6900 open
+
+# Run the container (in the background) exposing port 6900
 docker run -p 6900:6900  --detach pudb-example
+
 # Connect to pudb via telnet
 telnet 127.0.0.1 6900
+
 # Enjoy debugging and star the repo if you liked it!
 ```
 
